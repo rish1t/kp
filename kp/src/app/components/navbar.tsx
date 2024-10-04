@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -38,12 +38,13 @@ export default function Navbar() {
     }, [isMenuOpen])
 
     return (
-        <nav className="bg-[#e0d1bb] p-4 shadow-md fixed w-full z-50">
+        <nav className="bg-[#FEE6E1] p-4 shadow-md fixed w-full z-50">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
                         {/* Logo placeholder */}
-                        <div className="w-10 h-10 bg-[#ECE2D0] rounded-full mr-4"></div>
+                        <div className="w-10 h-10 bg-[#F27708] rounded-full mr-4"></div>
+                        {/* <div className='w-30 h-5 text-[#111111] font-bold mr-4'>KP</div> */}
                     </div>
 
                     {/* Desktop menu */}
@@ -52,7 +53,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-[#7D6A55] hover:text-[#A27B5C] font-medium transition-colors duration-300"
+                                className="text-[#111111] hover:text-[#F27708] font-medium transition-colors duration-300"
                             >
                                 {item.name}
                             </Link>
@@ -63,7 +64,7 @@ export default function Navbar() {
                     <div className="md:hidden">
                         <button
                             onClick={toggleMenu}
-                            className="text-[#A27B5C] hover:text-[#7D6A55] focus:outline-none"
+                            className="text-[#F27708] hover:text-[#F89134] focus:outline-none"
                         >
                             {isMenuOpen ? (
                                 <X className="h-6 w-6" />
@@ -84,14 +85,14 @@ export default function Navbar() {
 
                     {/* Sidebar */}
                     <div
-                        className={`fixed top-0 right-0 h-full w-64 bg-[#ECE2D0] shadow-lg transform transition-transform duration-300 ease-in-out backdrop-blur-md drop-shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}
+                        className={`fixed top-0 right-0 h-full w-64 bg-[#FDFBF9] shadow-lg transform transition-transform duration-300 ease-in-out backdrop-blur-md drop-shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}
                     >
                         <div className="flex flex-col space-y-6 mt-16 p-6">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="text-[#7D6A55] hover:text-[#A27B5C] font-medium transition-colors duration-300"
+                                    className="text-[#111111] hover:text-[#F27708] font-medium transition-colors duration-300"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.name}

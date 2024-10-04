@@ -42,10 +42,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
         <div className="text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
-            Explore the World
+              Explore the World.
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
-            Discover breathtaking landscapes and unforgettable adventures
+              Where beauty meets relaxation
           </p>
           <button className="bg-white text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-colors shadow-lg">
             Start Your Journey
